@@ -1,0 +1,6 @@
+.profile__name-container {
+  max-width: 520px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
