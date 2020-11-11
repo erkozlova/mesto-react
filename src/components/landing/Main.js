@@ -5,9 +5,9 @@ import api from "../../utils/api.js";
 import Card from './Card.js';
 
 function Main(props) {
-  const [userName, setUserName] = React.useState();
-  const [userDescription, setUserDescription] = React.useState();
-  const [userAvatar, setUserAvatar] = React.useState();
+  const [userName, setUserName] = React.useState('');
+  const [userDescription, setUserDescription] = React.useState('');
+  const [userAvatar, setUserAvatar] = React.useState('');
   const [cards, setCards] = React.useState([]);
 
   React.useEffect(() => {
@@ -20,6 +20,9 @@ function Main(props) {
 
       // Установка изначальных 
       setCards(initialCards);
+    })
+    .catch((err) => {
+      console.log(err);
     });
   }, []);
 

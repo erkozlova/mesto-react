@@ -1,5 +1,4 @@
 import React from "react";
-import "./App.css";
 import Header from "./landing/Header.js";
 import Main from "./landing/Main.js";
 import Footer from "./landing/Footer.js";
@@ -12,7 +11,7 @@ function App() {
   );
   const [isAddProfilePopupOpen, setAddProfilePopupOpen] = React.useState(false);
   const [isEditAvatarPopupOpen, setEditAvatarPopupOpen] = React.useState(false);
-  const [selectedCard, setSelectedCard] = React.useState();
+  const [selectedCard, setSelectedCard] = React.useState({});
 
   function handleEditProfileClick() {
     setEditProfilePopupOpen(true);
@@ -30,7 +29,7 @@ function App() {
     setEditProfilePopupOpen(false)
     setAddProfilePopupOpen(false);
     setEditAvatarPopupOpen(false);
-    setSelectedCard(false);
+    setSelectedCard({});
   }
 
   function handleCardClick(card) {
@@ -63,6 +62,7 @@ function App() {
             id="author-name"
             type="text"
             name="name"
+            placeholder="Имя"
             minLength="2"
             maxLength="40"
             required
@@ -75,6 +75,7 @@ function App() {
             id="author-description"
             type="text"
             name="description"
+            placeholder="Описание"
             minLength="2"
             maxLength="200"
             required
