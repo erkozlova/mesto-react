@@ -1,0 +1,14 @@
+.admission__sing-in-link {
+  width: 358px;
+  margin: 15px auto 0;
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
+  color: white;
+  text-decoration: none;
+}
+
+.admission__sing-in-link:hover {
+  opacity: 0.6;
+}

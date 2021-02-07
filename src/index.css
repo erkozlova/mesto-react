@@ -4,6 +4,9 @@
 
 @import url(./blocks/header/header.css);
 @import url(./blocks/header/__logo/header__logo.css);
+@import url(./blocks/header/__wrapper/header__wrapper.css);
+@import url(./blocks/header/__link/header__link.css);
+@import url(./blocks/header/__email/header__email.css);
 
 @import url(./blocks/profile/profile.css);
 @import url(./blocks/profile/__wrapper/profile__wrapper.css);
@@ -53,6 +56,15 @@
 @import url(./blocks/popup/__container/popup__container.css);
 @import url(./blocks/popup/__subtitle/popup__subtitle.css);
 @import url(./blocks/popup/__fullimage/popup__fullimage.css);
+@import url(./blocks/popup/__image/popup__image.css);
+@import url(./blocks/popup/__text-info/popup__text-info.css);
+
+@import url(./blocks/admission/admission.css);
+@import url(./blocks/admission/__form/admission__form.css);
+@import url(./blocks/admission/__title/admission__title.css);
+@import url(./blocks/admission/__input/admission__input.css);
+@import url(./blocks/admission/__submit/admission__submit.css);
+@import url(./blocks/admission/__sing-in-link/admission__sing-in-link.css);
 
 body {
   font-family: Inter, Arial, sans-serif;
